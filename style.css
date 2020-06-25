@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
 }
-.body-wraper {
+body {
   background-color: #0a0919;
 }
 .nav-wrapper {
@@ -137,6 +137,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
 .description {
   margin-left: 200px;
   margin-top: 50px;
+  padding-right: 150px;
   margin-right: 200px;
 
   font-family: Roboto;
@@ -187,34 +188,54 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
   border-radius: 28.9524px;
 }
 .buttons img {
-  width: 50px;
-  height: auto;
+  float: left;
+  align-self: center;
+  padding-left: 10px;
+  width: 25px;
+  height: 25px;
   display: flex;
 }
+
 .buttons h1 {
   color: #efeff0;
+  padding-left: 20px;
+  font-size: 23px;
 }
 
 .download1 {
-  display: flex;
+  /* display: flex; */
+
 }
 
 .social {
-  margin-top: 100px;
-  margin-left: 10px;
-  display: grid;
+  left: 5px;
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
 }
 .social img {
   padding: 6px;
-  height: 40px;
-  width: auto;
+  height: 30px;
+  display: block;
+}
+
+.profiledp{
+  display: block;
 }
 .profiledp {
+  
   width: 240px;
-  height: 211.2px;
-  left: 894px;
-  top: 331px;
-
-  background: url(./WhatsApp\Image\2020-06-24\at\1.10.33\AM.jpeg);
-  border: 0.993553px solid #ffb633;
+  height: 240px;
+  right: 50px;
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+  background: url(./Deskpick.jpeg);
+  background-size:cover;
+  background-position-x: 435;
+  /* background-position-x: 460px; */
+  /* background-position-y: 800px; */
+  /* background-size: cover; */
+  border: 1px solid #ffb633;
+  border-radius: 150px;
 }
