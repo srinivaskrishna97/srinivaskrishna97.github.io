@@ -151,6 +151,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
   color: #ffffff;
 }
 .buttons {
+  padding-left: 10px;
   margin-top: 25px;
   margin-left: 200px;
   display: flex;
@@ -166,26 +167,28 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
   border-radius: 28.9524px;
 }
 .phonenumber {
-  display: flex;
+  /* display: flex;
   width: 400px;
   height: 38px;
   left: 213px;
   top: 547px;
-
+  border: 2px solid #ffb633;
+  box-sizing: border-box;
+  border-radius: 28.9524px; */
+  display: flex;
   border: 2px solid #ffb633;
   box-sizing: border-box;
   border-radius: 28.9524px;
 }
 .email3 {
-  display: flex;
-  width: 530px;
-  height: 38px;
-  left: 395px;
-  top: 547px;
-
-  border: 2px solid #ffb633;
-  box-sizing: border-box;
-  border-radius: 28.9524px;
+display: flex;
+/* width: 530px; */
+/* height: 38px; */
+/* left: 395px; */
+/* top: 547px; */
+border: 2px solid #ffb633;
+box-sizing: border-box;
+border-radius: 28.9524px;
 }
 .buttons img {
   float: left;
@@ -200,13 +203,20 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
   color: #efeff0;
   padding-left: 20px;
   font-size: 23px;
+  align-self: center;
 }
 
 .download1 {
-  /* display: flex; */
-
+  width: 300px;
 }
-
+.phonenumber {
+  margin-left: 20px;
+  width: 250px;
+}
+.email3{
+  margin-left: 20px;
+  width: 400px;
+}
 .social {
   left: 5px;
   position: fixed;
@@ -219,11 +229,10 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
   display: block;
 }
 
-.profiledp{
+.profiledp {
   display: block;
 }
 .profiledp {
-  
   width: 240px;
   height: 240px;
   right: 50px;
@@ -231,7 +240,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr; */
   top: 40%;
   transform: translateY(-50%);
   background: url(./Deskpick.jpeg);
-  background-size:cover;
+  background-size: cover;
   background-position-x: 435;
   /* background-position-x: 460px; */
   /* background-position-y: 800px; */
