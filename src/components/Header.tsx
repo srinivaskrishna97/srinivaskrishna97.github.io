@@ -1,6 +1,16 @@
 import React from 'react';
 
 const Header: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start' 
+      });
+    }
+  };
+
   return (
     <header className="header">
       <div className="floating-elements">
@@ -15,10 +25,10 @@ const Header: React.FC = () => {
           <p className="tagline">Crafting innovative solutions with cutting-edge technologies and passionate expertise</p>
         </div>
         <nav className="nav">
-          <a href="#summary" className="nav-link">Summary</a>
-          <a href="#skills" className="nav-link">Skills</a>
-          <a href="#experience" className="nav-link">Experience</a>
-          <a href="#education" className="nav-link">Education</a>
+          <button onClick={() => scrollToSection('summary')} className="nav-link">Summary</button>
+          <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
+          <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
+          <button onClick={() => scrollToSection('education')} className="nav-link">Education</button>
         </nav>
       </div>
     </header>
