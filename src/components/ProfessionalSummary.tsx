@@ -7,42 +7,40 @@ const ProfessionalSummary: React.FC = () => {
         <h2 className="section-title">Professional Summary</h2>
         <div className="summary-content">
           <p className="intro-text">
-            Experienced Software Engineer with 6+ years of expertise in Software Development Life Cycle (SDLC), 
-            specializing in requirements analysis, design, development, testing, and deployment of enterprise applications 
-            in dynamic environments.
+            Passionate Senior Java Developer with 6+ years of expertise in building scalable, high-performance enterprise applications. Specialized in modern Java ecosystems, cloud-native architectures, and full-stack development with a focus on innovation and excellence.
           </p>
           <ul className="summary-highlights">
             <li>
-              <strong>Backend Excellence:</strong> Expert in Java, Spring Boot, Spring MVC, Hibernate, JPA, 
-              <p>and RESTful web services development</p>
+              <strong>🚀 Backend Mastery</strong>
+              <p>Expert in Java 17+, Spring Boot 3.x, microservices architecture, and high-performance RESTful APIs serving millions of requests daily</p>
             </li>
             <li>
-              <strong>Modern Architecture:</strong> Proficient in microservices architecture, containerization with Docker, 
-              <p>and cloud deployment on AWS and GCP</p>
+              <strong>☁️ Cloud-Native Solutions</strong>
+              <p>Proficient in AWS, GCP, Docker, Kubernetes, and serverless architectures for scalable, resilient applications</p>
             </li>
             <li>
-              <strong>Full-Stack Development:</strong> Strong experience with React.js, Angular, TypeScript, and modern 
-              <p>frontend technologies for building responsive single-page applications</p>
+              <strong>💻 Full-Stack Excellence</strong>
+              <p>Advanced skills in React 18+, Angular 16+, TypeScript, and modern frontend frameworks for exceptional user experiences</p>
             </li>
             <li>
-              <strong>Agile Methodology:</strong> Extensive experience with Scrum, Sprint cycles, daily standups, 
-              <p>and collaborative development practices</p>
+              <strong>⚡ Performance Optimization</strong>
+              <p>Specialized in database optimization, caching strategies, and system performance tuning for enterprise-scale applications</p>
             </li>
             <li>
-              <strong>Database Technologies:</strong> Expertise in both SQL (Oracle, MySQL, PostgreSQL) and 
-              <p>NoSQL databases (MongoDB, Cassandra)</p>
+              <strong>🗄️ Data Engineering</strong>
+              <p>Expert in PostgreSQL, MongoDB, Redis, and Apache Kafka for robust data processing and real-time streaming</p>
             </li>
             <li>
-              <strong>Message Queues & Streaming:</strong> Hands-on experience with Apache Kafka, RabbitMQ, 
-              <p>and event-driven architectures</p>
+              <strong>🔧 DevOps & Automation</strong>
+              <p>Proficient in CI/CD pipelines, Jenkins, GitLab, infrastructure as code, and automated testing frameworks</p>
             </li>
             <li>
-              <strong>DevOps & CI/CD:</strong> Proficient in Jenkins, Docker, Kubernetes, Maven, and 
-              <p>automated deployment pipelines</p>
+              <strong>🎯 Agile Leadership</strong>
+              <p>Experienced in Scrum methodologies, technical mentoring, and cross-functional team collaboration</p>
             </li>
             <li>
-              <strong>Design Patterns:</strong> Strong understanding of MVC, DAO, Singleton, Factory, 
-              <p>and other enterprise design patterns</p>
+              <strong>🏗️ Architecture Design</strong>
+              <p>Strong foundation in design patterns, clean architecture, and scalable system design principles</p>
             </li>
           </ul>
         </div>
