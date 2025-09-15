@@ -6,7 +6,7 @@ const ProfessionalSummary: React.FC = () => {
       <div className="container">
         <h2 className="section-title">Professional Summary</h2>
         <div className="summary-content">
-          <p>
+          <p className="intro-text">
             Experienced Software Engineer with 6+ years of expertise in Software Development Life Cycle (SDLC), 
             specializing in requirements analysis, design, development, testing, and deployment of enterprise applications 
             in dynamic environments.
@@ -14,35 +14,35 @@ const ProfessionalSummary: React.FC = () => {
           <ul className="summary-highlights">
             <li>
               <strong>Backend Excellence:</strong> Expert in Java, Spring Boot, Spring MVC, Hibernate, JPA, 
-              and RESTful web services development
+              <p>and RESTful web services development</p>
             </li>
             <li>
               <strong>Modern Architecture:</strong> Proficient in microservices architecture, containerization with Docker, 
-              and cloud deployment on AWS and GCP
+              <p>and cloud deployment on AWS and GCP</p>
             </li>
             <li>
               <strong>Full-Stack Development:</strong> Strong experience with React.js, Angular, TypeScript, and modern 
-              frontend technologies for building responsive single-page applications
+              <p>frontend technologies for building responsive single-page applications</p>
             </li>
             <li>
               <strong>Agile Methodology:</strong> Extensive experience with Scrum, Sprint cycles, daily standups, 
-              and collaborative development practices
+              <p>and collaborative development practices</p>
             </li>
             <li>
               <strong>Database Technologies:</strong> Expertise in both SQL (Oracle, MySQL, PostgreSQL) and 
-              NoSQL databases (MongoDB, Cassandra)
+              <p>NoSQL databases (MongoDB, Cassandra)</p>
             </li>
             <li>
               <strong>Message Queues & Streaming:</strong> Hands-on experience with Apache Kafka, RabbitMQ, 
-              and event-driven architectures
+              <p>and event-driven architectures</p>
             </li>
             <li>
               <strong>DevOps & CI/CD:</strong> Proficient in Jenkins, Docker, Kubernetes, Maven, and 
-              automated deployment pipelines
+              <p>automated deployment pipelines</p>
             </li>
             <li>
               <strong>Design Patterns:</strong> Strong understanding of MVC, DAO, Singleton, Factory, 
-              and other enterprise design patterns
+              <p>and other enterprise design patterns</p>
             </li>
           </ul>
         </div>

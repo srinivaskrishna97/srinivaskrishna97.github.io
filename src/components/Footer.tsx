@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p>&copy; 2025 Srinivas Krishna. All rights reserved.</p>
+          <p className="footer-text">&copy; 2025 Srinivas Krishna. All rights reserved.</p>
           <div className="contact-links">
             <a href="mailto:contact@srinivaskrishna.dev" className="contact-link">
               Email
