@@ -511,7 +511,7 @@ body {
 .experience-timeline::before {
   content: '';
   position: absolute;
-  left: var(--space-12);
+  left: var(--space-10);
   top: 0;
   bottom: 0;
   width: 3px;
@@ -528,14 +528,14 @@ body {
   border: 1px solid var(--neutral-200);
   transition: all var(--transition-normal);
   position: relative;
-  margin-left: var(--space-24);
+  margin-left: var(--space-32);
 }
 
 .experience-item::before {
   content: '';
   position: absolute;
-  left: -var(--space-16);
-  top: var(--space-10);
+  left: -var(--space-20);
+  top: var(--space-12);
   width: 20px;
   height: 20px;
   background: var(--gradient-primary);
@@ -835,15 +835,15 @@ body {
   }
 
   .experience-timeline::before {
-    left: var(--space-8);
+    left: var(--space-6);
   }
 
   .experience-item {
-    margin-left: var(--space-20);
+    margin-left: var(--space-24);
   }
 
   .experience-item::before {
-    left: -var(--space-12);
+    left: -var(--space-16);
   }
 }
 
