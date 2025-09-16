@@ -23,13 +23,13 @@ const Header: React.FC = () => {
           <h1 className="name">Srinivas Krishna</h1>
           <h2 className="title">Senior Java Developer</h2>
           <p className="tagline">Crafting innovative solutions with cutting-edge technologies and passionate expertise</p>
+          <nav className="nav">
+            <button onClick={() => scrollToSection('summary')} className="nav-link">Summary</button>
+            <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
+            <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
+            <button onClick={() => scrollToSection('education')} className="nav-link">Education</button>
+          </nav>
         </div>
-        <nav className="nav">
-          <button onClick={() => scrollToSection('summary')} className="nav-link">Summary</button>
-          <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
-          <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
-          <button onClick={() => scrollToSection('education')} className="nav-link">Education</button>
-        </nav>
       </div>
     </header>
   );
