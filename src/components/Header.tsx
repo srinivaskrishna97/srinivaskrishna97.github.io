@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header-content">
           <h1 className="name">Srinivas Krishna</h1>
-          <h2 className="title">Senior Java Developer</h2>
+          <h2 className="title">Senior Java Developer (Technical Lead)</h2>
           <p className="tagline">Crafting innovative solutions with cutting-edge technologies and passionate expertise</p>
           <nav className="nav">
             <button onClick={() => scrollToSection('summary')} className="nav-link">Summary</button>
