@@ -1,1 +1,284 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#2c3e50"/><meta name="description" content="Srinivas Krishna - Senior Java Developer with 6+ years of experience in Spring Boot, React, Microservices, and Cloud Technologies. Portfolio showcasing enterprise application development expertise."/><meta name="keywords" content="Java Developer, Spring Boot, React, Microservices, Software Engineer, Full Stack Developer"/><meta name="author" content="Srinivas Krishna"/><meta property="og:title" content="Srinivas Krishna - Senior Java Developer"/><meta property="og:description" content="Professional portfolio of Srinivas Krishna, Senior Java Developer specializing in Spring Boot, React, and modern enterprise applications."/><meta property="og:type" content="website"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Srinivas Krishna - Senior Java Developer Portfolio</title><script defer="defer" src="/static/js/main.8531316b.js"></script><link href="/static/css/main.4e2d17d3.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Srinivas Krishna — Senior Java Developer &amp; Technical Lead</title>
+<meta name="description" content="Senior Java developer and technical lead. Spring Boot services at 10M+ requests/day, event-driven architecture on Kafka, and Kubernetes platforms I run myself." />
+<meta name="theme-color" content="#0a0e14" />
+<link rel="icon" href="/favicon.ico" />
+<meta property="og:title" content="Srinivas Krishna — Senior Java Developer & Technical Lead" />
+<meta property="og:description" content="Spring Boot services at 10M+ requests/day, event-driven architecture on Kafka, and Kubernetes platforms I run myself." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#10151c; --surface-2:#141b24; --line:#1e2733;
+  --text:#c9d1d9; --bright:#e6edf3; --muted:#7d8590;
+  --accent:#02d9f7; --accent-dim:rgba(2,217,247,.14); --amber:#ffb454;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --max:980px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--sans); font-size:16px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,.035) 1px, transparent 0);
+  background-size:32px 32px;
+}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 24px}
+
+/* nav */
+nav{position:sticky; top:0; z-index:50; backdrop-filter:blur(10px);
+  background:rgba(10,14,20,.82); border-bottom:1px solid var(--line)}
+nav .wrap{display:flex; align-items:center; justify-content:space-between; height:56px; gap:16px}
+.brand{font-family:var(--mono); font-size:14px; color:var(--bright); font-weight:700; white-space:nowrap}
+.brand span{color:var(--accent)}
+.navlinks{display:flex; gap:22px; font-family:var(--mono); font-size:13px; overflow-x:auto}
+.navlinks a{color:var(--muted); white-space:nowrap}
+.navlinks a:hover{color:var(--accent); text-decoration:none}
+
+/* hero */
+header{padding:64px 0 40px}
+.term{border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--surface);
+  box-shadow:0 16px 50px -20px rgba(0,0,0,.8)}
+.term-bar{display:flex; align-items:center; gap:8px; padding:10px 14px;
+  background:var(--surface-2); border-bottom:1px solid var(--line)}
+.dot{width:11px; height:11px; border-radius:50%}
+.term-title{font-family:var(--mono); font-size:12px; color:var(--muted); margin-left:8px}
+.term-body{padding:26px 24px 30px; font-family:var(--mono); font-size:14px}
+.pr{color:var(--accent)}
+.cmd{color:var(--bright)}
+.out{margin:14px 0 26px; color:var(--muted); font-family:var(--sans); font-size:16px}
+h1{margin:6px 0 4px; font-size:clamp(30px,5.5vw,46px); line-height:1.12; color:var(--bright);
+   letter-spacing:-.02em; font-weight:700; font-family:var(--sans)}
+.role{font-family:var(--mono); font-size:15px; color:var(--accent); margin-bottom:18px}
+.lede{font-size:17px; color:var(--text); max-width:62ch; font-family:var(--sans)}
+.cursor{display:inline-block; width:8px; height:16px; background:var(--accent);
+  vertical-align:-2px; animation:blink 1.15s steps(2,start) infinite}
+@keyframes blink{to{visibility:hidden}}
+
+/* metrics */
+.metrics{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-top:28px}
+.metric{border:1px solid var(--line); border-radius:8px; padding:16px 18px; background:var(--surface)}
+.metric .n{font-family:var(--mono); font-size:24px; color:var(--accent); font-weight:700; line-height:1.2}
+.metric .l{font-size:13px; color:var(--muted); margin-top:3px}
+
+/* sections */
+section{padding:54px 0; border-top:1px solid var(--line)}
+.label{font-family:var(--mono); font-size:12.5px; color:var(--muted); margin-bottom:8px; letter-spacing:.04em}
+.label b{color:var(--accent); font-weight:500}
+h2{margin:0 0 26px; font-size:clamp(22px,3.4vw,28px); color:var(--bright); letter-spacing:-.015em; font-weight:700}
+p{margin:0 0 16px}
+
+/* experience */
+.job{position:relative; padding:0 0 34px 26px; border-left:1px solid var(--line)}
+.job:last-child{padding-bottom:0}
+.job::before{content:""; position:absolute; left:-5px; top:6px; width:9px; height:9px;
+  border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px var(--bg)}
+.job-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px; margin-bottom:4px}
+.job h3{margin:0; font-size:18px; color:var(--bright); font-weight:600}
+.when{font-family:var(--mono); font-size:12.5px; color:var(--muted)}
+.job ul{margin:12px 0 14px; padding-left:18px}
+.job li{margin-bottom:7px; color:var(--text)}
+.job li::marker{color:var(--accent)}
+.tags{display:flex; flex-wrap:wrap; gap:6px}
+.tag{font-family:var(--mono); font-size:11.5px; color:var(--muted); display:inline-flex; align-items:center; gap:6px;
+  border:1px solid var(--line); border-radius:5px; padding:4px 9px; background:var(--surface); transition:border-color .15s, color .15s}
+.tag img{height:14px; width:auto; max-width:34px; display:block; flex:none;
+  background:#f2f6fa; border-radius:3px; padding:2px; box-sizing:content-box}
+.skillcard .tag:hover{border-color:var(--accent); color:var(--bright)}
+
+/* skills */
+.skillgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px}
+.skillcard{border:1px solid var(--line); border-radius:8px; padding:16px 18px; background:var(--surface)}
+.skillcard h4{margin:0 0 11px; font-family:var(--mono); font-size:13px; color:var(--accent); font-weight:500}
+
+/* platform callout */
+.callout{border:1px solid var(--line); border-left:2px solid var(--accent); border-radius:8px;
+  padding:20px 22px; background:var(--surface)}
+.callout ul{margin:12px 0 0; padding-left:18px}
+.callout li{margin-bottom:8px}
+.callout li::marker{color:var(--accent)}
+
+/* footer */
+footer{border-top:1px solid var(--line); padding:34px 0 46px}
+.flinks{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px}
+.flink{font-family:var(--mono); font-size:13px; border:1px solid var(--line); border-radius:6px;
+  padding:8px 14px; color:var(--text); background:var(--surface)}
+.flink:hover{border-color:var(--accent); color:var(--accent); text-decoration:none}
+.fnote{font-family:var(--mono); font-size:12px; color:var(--muted)}
+@media(max-width:620px){ .term-body{padding:20px 16px 24px} .navlinks{gap:16px} }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="brand">srinivas<span>@</span>krishna</div>
+  <div class="navlinks">
+    <a href="#experience">experience</a>
+    <a href="#skills">skills</a>
+    <a href="#platform">platform</a>
+    <a href="#education">education</a>
+  </div>
+</div></nav>
+
+<header><div class="wrap">
+  <div class="term">
+    <div class="term-bar">
+      <span class="dot" style="background:#ff5f56"></span>
+      <span class="dot" style="background:#ffbd2e"></span>
+      <span class="dot" style="background:#27c93f"></span>
+      <span class="term-title">~/srinivaskrishna97 — zsh</span>
+    </div>
+    <div class="term-body">
+      <div><span class="pr">$</span> <span class="cmd">whoami</span></div>
+      <h1>Srinivas Krishna</h1>
+      <div class="role">Senior Java Developer · Technical Lead</div>
+      <p class="lede">I build backend systems in Java and Spring Boot that carry 10M+ requests a day,
+      move data between them with Kafka, and run the whole thing on Kubernetes — including the
+      cluster in my own home lab.<span class="cursor"></span></p>
+
+      <div class="metrics">
+        <div class="metric"><div class="n">8+</div><div class="l">years building backends</div></div>
+        <div class="metric"><div class="n">10M+</div><div class="l">daily requests served</div></div>
+        <div class="metric"><div class="n">90%+</div><div class="l">test coverage maintained</div></div>
+        <div class="metric"><div class="n">60%</div><div class="l">deploy time reduced</div></div>
+      </div>
+    </div>
+  </div>
+</div></header>
+
+<section id="summary"><div class="wrap">
+  <div class="label"><b>$</b> cat summary.txt</div>
+  <h2>What I do</h2>
+  <p>Eight years across four roles, from writing JAX-RS services to leading a team building
+  event-driven platforms. My work sits mostly on the backend — Spring Boot, JPA/Hibernate,
+  PostgreSQL and Kafka — but I own what happens after the merge too: containers, pipelines,
+  Kubernetes manifests, and the dashboards that tell me whether any of it is healthy.</p>
+  <p>I care about the parts that are unglamorous and load-bearing: query plans, caching
+  strategy, exactly-once semantics, and test coverage that actually catches regressions.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="label"><b>$</b> git log --author="Srinivas" --oneline</div>
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><h3>Technical Lead</h3><span class="when">Oct 2022 – Present</span></div>
+    <ul>
+      <li>Architected microservices in Spring Boot 3.x exposing REST APIs that serve <strong>10M+ requests daily</strong></li>
+      <li>Designed cloud-native services on GCP using Kubernetes Engine, Cloud Functions and Cloud Run</li>
+      <li>Built event-driven architecture on Apache Kafka for real-time processing between services</li>
+      <li>Cut deployment time <strong>60%</strong> by moving to Docker and Kubernetes orchestration</li>
+      <li>Held <strong>90%+ coverage</strong> with JUnit 5, Mockito and TestContainers</li>
+      <li>Tuned JPA/Hibernate against PostgreSQL and introduced caching where it measurably paid off</li>
+      <li>Automated build, test and deploy through Jenkins and GitLab CI/CD</li>
+      <li>Built SPAs in React 18 and TypeScript against those backend APIs</li>
+    </ul>
+    <div class="tags"><span class="tag">Java 17</span><span class="tag">Spring Boot 3.x</span><span class="tag">Kafka</span><span class="tag">Kubernetes</span><span class="tag">GCP</span><span class="tag">PostgreSQL</span><span class="tag">React 18</span><span class="tag">TypeScript</span><span class="tag">Docker</span><span class="tag">Jenkins</span></div>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Backend Java Developer</h3><span class="when">Oct 2021 – Sep 2022</span></div>
+    <ul>
+      <li>Built enterprise applications on Spring MVC with Hibernate for persistence</li>
+      <li>Implemented message-driven architecture with Kafka Producer/Consumer APIs for high-throughput processing</li>
+      <li>Achieved exactly-once semantics using Kafka Streams for reliable message handling</li>
+      <li>Wrote multithreaded ETL processes for distributed XML loading via JPA/Hibernate</li>
+      <li>Designed and optimised complex SQL and stored procedures across Oracle and MySQL</li>
+      <li>Built Angular components in TypeScript for the customer-facing interfaces</li>
+    </ul>
+    <div class="tags"><span class="tag">Java 11</span><span class="tag">Spring MVC</span><span class="tag">Kafka Streams</span><span class="tag">Hibernate</span><span class="tag">Oracle</span><span class="tag">MySQL</span><span class="tag">Angular</span><span class="tag">Maven</span></div>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Java Developer</h3><span class="when">Oct 2019 – Sep 2021</span></div>
+    <ul>
+      <li>Developed web services with JAX-RS APIs built to specific business requirements</li>
+      <li>Implemented business logic on Spring Core with Hibernate ORM in the data access layer</li>
+      <li>Modelled document storage and retrieval in MongoDB</li>
+      <li>Ran cloud infrastructure on AWS — EC2, S3, RDS and IAM</li>
+      <li>Encoded complex decision logic as rules in the Drools engine</li>
+      <li>Built responsive front ends in Angular with Bootstrap</li>
+    </ul>
+    <div class="tags"><span class="tag">Java 8</span><span class="tag">Spring Core</span><span class="tag">JAX-RS</span><span class="tag">MongoDB</span><span class="tag">AWS</span><span class="tag">Drools</span><span class="tag">Angular</span></div>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Junior Java Developer</h3><span class="when">Mar 2018 – Sep 2019</span></div>
+    <ul>
+      <li>Built applications on the Spring Framework using dependency injection and MVC</li>
+      <li>Mapped relational data through Hibernate ORM</li>
+      <li>Wrote REST and SOAP services for inter-system communication</li>
+      <li>Worked with Cassandra and MongoDB for scalable storage</li>
+      <li>Containerised applications with Docker for consistent environments</li>
+      <li>Practised TDD and BDD; configured and deployed on Apache Tomcat</li>
+    </ul>
+    <div class="tags"><span class="tag">Java 8</span><span class="tag">Spring</span><span class="tag">Hibernate</span><span class="tag">Cassandra</span><span class="tag">MongoDB</span><span class="tag">Docker</span><span class="tag">JUnit</span><span class="tag">Tomcat</span></div>
+  </div>
+</div></section>
+
+<section id="platform"><div class="wrap">
+  <div class="label"><b>$</b> kubectl get nodes</div>
+  <h2>The platform I run myself</h2>
+  <div class="callout">
+    <p>Outside work I operate a multi-node Kubernetes cluster on my own hardware — mixed amd64
+    and ARM64, running real services rather than demos. It is where I get to own the whole
+    stack end to end:</p>
+    <ul>
+      <li><strong>Cluster &amp; delivery</strong> — private container registry, multi-arch image pipelines, self-hosted GitHub Actions runners</li>
+      <li><strong>Edge &amp; TLS</strong> — nginx reverse proxy with automated Let's Encrypt certificates and Cloudflare DNS</li>
+      <li><strong>Identity</strong> — a multi-tenant IAM platform on FastAPI and PostgreSQL: tenant-isolated RBAC, Google and Microsoft SSO, OAuth2/OIDC, IdP group-to-role mapping</li>
+      <li><strong>Applications</strong> — internal dashboards and ERP systems, React/TypeScript over Python services</li>
+    </ul>
+    <p style="margin:14px 0 0; font-size:14.5px; color:var(--muted)">
+    The analytics cards on my <a href="https://github.com/srinivaskrishna97">GitHub profile</a>
+    are served from this cluster — my containers, my token, my TLS.</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="label"><b>$</b> ls -1 skills/</div>
+  <h2>Technical skills</h2>
+  <div class="skillgrid">
+    <div class="skillcard"><h4>languages</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" loading="lazy" />Java 17+</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" loading="lazy" />TypeScript</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" loading="lazy" />JavaScript ES6+</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy" />Python</span><span class="tag">SQL</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="" loading="lazy" />Shell</span></div></div>
+    <div class="skillcard"><h4>backend</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" loading="lazy" />Spring Boot 3.x</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" loading="lazy" />Spring MVC</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" loading="lazy" />Spring Security</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" loading="lazy" />Spring Data JPA</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" alt="" loading="lazy" />Hibernate 6.x</span><span class="tag">JAX-RS</span><span class="tag">JAX-WS</span></div></div>
+    <div class="skillcard"><h4>messaging &amp; streaming</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy" />Apache Kafka</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy" />Kafka Streams</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg" alt="" loading="lazy" />RabbitMQ</span><span class="tag">Apache Pulsar</span><span class="tag">AWS SQS</span><span class="tag">Google Pub/Sub</span></div></div>
+    <div class="skillcard"><h4>data</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" />PostgreSQL</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" loading="lazy" />MySQL</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="" loading="lazy" />Oracle</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" />MongoDB</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" loading="lazy" />Redis</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cassandra/cassandra-original.svg" alt="" loading="lazy" />Cassandra</span></div></div>
+    <div class="skillcard"><h4>cloud &amp; platform</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" alt="" loading="lazy" />Kubernetes</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" loading="lazy" />Docker</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" loading="lazy" />AWS</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="" loading="lazy" />GCP</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" loading="lazy" />Azure</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg" alt="" loading="lazy" />Terraform</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="" loading="lazy" />nginx</span></div></div>
+    <div class="skillcard"><h4>ci/cd</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="" loading="lazy" />Jenkins</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="" loading="lazy" />GitLab CI/CD</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="" loading="lazy" />GitHub Actions</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" alt="" loading="lazy" />Maven</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" alt="" loading="lazy" />Gradle</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg" alt="" loading="lazy" />SonarQube</span></div></div>
+    <div class="skillcard"><h4>testing</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" alt="" loading="lazy" />JUnit 5</span><span class="tag">Mockito</span><span class="tag">TestContainers</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="" loading="lazy" />Jest</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg" alt="" loading="lazy" />Cypress</span></div></div>
+    <div class="skillcard"><h4>frontend</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" loading="lazy" />React 18+</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="" loading="lazy" />Angular 16+</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" loading="lazy" />TypeScript</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="" loading="lazy" />Sass/SCSS</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" alt="" loading="lazy" />Material-UI</span></div></div>
+    <div class="skillcard"><h4>observability</h4><div class="tags"><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg" alt="" loading="lazy" />Prometheus</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" alt="" loading="lazy" />Grafana</span><span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg" alt="" loading="lazy" />ELK Stack</span><span class="tag">Splunk</span><span class="tag">New Relic</span><span class="tag">AppDynamics</span></div></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="label"><b>$</b> cat education.txt</div>
+  <h2>Education</h2>
+  <p style="color:var(--bright); font-weight:600; margin-bottom:6px">Bachelor of Technology — Computer Science and Engineering</p>
+  <p style="color:var(--muted)">Data structures and algorithms, software engineering, database systems,
+  and object-oriented design.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="flinks">
+    <a class="flink" href="https://github.com/srinivaskrishna97">GitHub</a>
+    <!-- Add when ready:
+    <a class="flink" href="https://linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+    <a class="flink" href="mailto:YOUR-EMAIL">Email</a>
+    -->
+  </div>
+  <div class="fnote">Static site — no framework, no build step. Served by GitHub Pages.</div>
+</div></footer>
+
+</body>
+</html>
